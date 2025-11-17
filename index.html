@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brave Copy Clean Demo</title>
+</head>
+<body>
+    <h1>Brave Copy Clean Demo</h1>
+    <p>Try copying some text on this page!</p>
+    <a href="https://wikipedia.org" target="_blank">Visit Wikipedia</a>
+    
+    <script>
+        document.body.addEventListener('copy', function(event) {
+            const paragraph = document.createElement('p');
+            paragraph.textContent = '✅ Copy event detected';
+            document.body.appendChild(paragraph);
+        });
+    </script>
+</body>
+</html>
